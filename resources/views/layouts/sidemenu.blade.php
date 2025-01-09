@@ -18,16 +18,16 @@
                                 <li class="nk-menu-item">
                                     <a href="html/index.html" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-dashlite"></em></span>
-                                        <span class="nk-menu-text">Default Dashboard</span>
+                                        <span class="nk-menu-text">Импорт ASL Belgi</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
                                     <a href="html/index-crypto.html" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
-                                        <span class="nk-menu-text">Crypto Dashboard</span>
+                                        <span class="nk-menu-text">Агрегаця</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
-                                <li class="nk-menu-item">
+                                {{--<li class="nk-menu-item">
                                     <a href="html/index-analytics.html" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-growth"></em></span>
                                         <span class="nk-menu-text">Analytics Dashboard</span>
@@ -38,30 +38,31 @@
                                         <span class="nk-menu-icon"><em class="icon ni ni-coins"></em></span>
                                         <span class="nk-menu-text">Invest Dashboard</span>
                                     </a>
-                                </li><!-- .nk-menu-item -->
+                                </li>--}}<!-- .nk-menu-item -->
                                 <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Pre-Built Pages</h6>
-                                </li><!-- .nk-menu-heading -->
+                                    <h6 class="overline-title text-primary-alt">Администрирование</h6>
+                                </li>
+                                <!-- .nk-menu-heading -->
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
-                                        <span class="nk-menu-text">Projects</span>
+                                        <span class="nk-menu-text">Задачи</span>
                                     </a>
-                                    <ul class="nk-menu-sub">
+                                    {{--<ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
                                             <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">Project Cards</span></a>
                                         </li>
                                         <li class="nk-menu-item">
                                             <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Project List</span></a>
                                         </li>
-                                    </ul><!-- .nk-menu-sub -->
+                                    </ul>--}}<!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
-                                        <span class="nk-menu-text">User Manage</span>
+                                        <span class="nk-menu-text">Пользователи</span>
                                     </a>
-                                    <ul class="nk-menu-sub">
+                                    {{--<ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
                                             <a href="html/user-list-regular.html" class="nk-menu-link"><span class="nk-menu-text">User List - Regular</span></a>
                                         </li>
@@ -77,8 +78,9 @@
                                         <li class="nk-menu-item">
                                             <a href="html/user-card.html" class="nk-menu-link"><span class="nk-menu-text">User Contact - Card</span> <span class="nk-menu-badge badge-warning">New</span></a>
                                         </li>
-                                    </ul><!-- .nk-menu-sub -->
+                                    </ul>--}}<!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->
+                                {{--
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
@@ -447,7 +449,7 @@
                                         <span class="nk-menu-icon"><em class="icon ni ni-text-rich"></em></span>
                                         <span class="nk-menu-text">Email Template</span>
                                     </a>
-                                </li>
+                                </li>--}}
                             </ul><!-- .nk-menu -->
                         </div><!-- .nk-sidebar-menu -->
                     </div><!-- .nk-sidebar-content -->
