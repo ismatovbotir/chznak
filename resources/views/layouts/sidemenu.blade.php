@@ -24,9 +24,22 @@
                                 <li class="nk-menu-item">
                                     <a href="html/index-crypto.html" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
-                                        <span class="nk-menu-text">Агрегаця</span>
+                                        <span class="nk-menu-text">Нанесение/Мониторинг</span>
                                     </a>
-                                </li><!-- .nk-menu-item -->
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="html/index-crypto.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
+                                        <span class="nk-menu-text">Агрегация</span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="html/index-crypto.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
+                                        <span class="nk-menu-text">Отправка отчетов</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
                                 {{--<li class="nk-menu-item">
                                     <a href="html/index-analytics.html" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-growth"></em></span>
