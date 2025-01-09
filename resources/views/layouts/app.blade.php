@@ -34,6 +34,7 @@
                 <div class="nk-header nk-header-fixed is-light">
                     <div class="container-fluid">
                         <div class="nk-header-wrap">
+                            @section('contentHead')
                             <div class="nk-menu-trigger d-xl-none ml-n1">
                                 <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
                             </div>
@@ -46,13 +47,13 @@
                             <div class="nk-header-news d-none d-xl-block">
                                 <div class="nk-news-list">
                                     <a class="nk-news-item" href="#">
-                                        <div class="nk-news-icon">
+                                    {{--<div class="nk-news-icon">
                                             <em class="icon ni ni-card-view"></em>
                                         </div>
-                                        <div class="nk-news-text">
+                                       <div class="nk-news-text">
                                             <p>Do you know the latest update of 2019? <span> A overview of our is now available on YouTube</span></p>
                                             <em class="icon ni ni-external"></em>
-                                        </div>
+                                        </div>--}}
                                     </a>
                                 </div>
                             </div><!-- .nk-header-news -->
@@ -66,7 +67,7 @@
                                                 </div>
                                                 <div class="user-info d-none d-md-block">
                                                     <div class="user-status">Administrator</div>
-                                                    <div class="user-name dropdown-indicator">Abu Bin Ishityak</div>
+                                                    <div class="user-name dropdown-indicator">Alisher A.</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -77,19 +78,19 @@
                                                         <span>AB</span>
                                                     </div>
                                                     <div class="user-info">
-                                                        <span class="lead-text">Abu Bin Ishtiyak</span>
-                                                        <span class="sub-text">info@softnio.com</span>
+                                                        <span class="lead-text">Abdullaev Alisher</span>
+                                                        <span class="sub-text">info@mirkans.uz</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="dropdown-inner">
+                                            {{--<div class="dropdown-inner">
                                                 <ul class="link-list">
                                                     <li><a href="html/user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
                                                     <li><a href="html/user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
                                                     <li><a href="html/user-profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
                                                     <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
                                                 </ul>
-                                            </div>
+                                            </div>--}}
                                             <div class="dropdown-inner">
                                                 <ul class="link-list">
                                                     <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
@@ -171,6 +172,7 @@
                                     </li><!-- .dropdown -->
                                 </ul><!-- .nk-quick-nav -->
                             </div><!-- .nk-header-tools -->
+                            @show
                         </div><!-- .nk-header-wrap -->
                     </div><!-- .container-fliud -->
                 </div>
@@ -179,6 +181,7 @@
                 <div class="nk-content ">
                     <div class="container-fluid">
                         <div class="nk-content-inner">
+                            @section('contentBody')
                             <div class="nk-content-body">
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
@@ -606,6 +609,7 @@
                                     </div><!-- .row -->
                                 </div><!-- .nk-block -->
                             </div>
+                            @show
                         </div>
                     </div>
                 </div>
@@ -614,7 +618,8 @@
                 <div class="nk-footer">
                     <div class="container-fluid">
                         <div class="nk-footer-wrap">
-                            <div class="nk-footer-copyright"> &copy; 2020 DashLite. Template by <a href="https://softnio.com" target="_blank">Softnio</a>
+                            @section('contentFoot')
+                            <div class="nk-footer-copyright"> &copy; {{date('Y')}} DashLite. Template by <a href="https://softnio.com" target="_blank">Softnio</a>
                             </div>
                             <div class="nk-footer-links">
                                 <ul class="nav nav-sm">
@@ -623,6 +628,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
                                 </ul>
                             </div>
+                            @show
                         </div>
                     </div>
                 </div>
@@ -634,9 +640,11 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
+    @section('scripts')
     <script src="assets/js/bundle.js?ver=2.4.0"></script>
     <script src="assets/js/scripts.js?ver=2.4.0"></script>
     <script src="assets/js/charts/gd-default.js?ver=2.4.0"></script>
+    @show
 </body>
 
 </html>
