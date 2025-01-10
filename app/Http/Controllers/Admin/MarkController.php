@@ -65,6 +65,6 @@ class MarkController extends Controller
 
     public function markImport(){
        
-        return view('Mark.import');
+        return view('mark.import');
     }
 }
