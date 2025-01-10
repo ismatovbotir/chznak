@@ -14,7 +14,9 @@ class ItemController extends Controller
      */
     public function index()
     {
-        return view('item.index');
+        $items=Item::paginate(20);
+       // dd($items);
+        return view('item.index',['items'=>$items]);
     }
 
     /**
