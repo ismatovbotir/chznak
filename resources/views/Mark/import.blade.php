@@ -4,7 +4,7 @@
 <form action="{{route('admin.mark.import')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
-        <label class="form-label" for="customFileLabel">Asl Belgi (.csv)</label>
+        <label class="form-label" for="customFileLabel">Asl Belgi (.csv).</label>
         <div class="form-control-wrap">
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="markFile" name="markFile">
