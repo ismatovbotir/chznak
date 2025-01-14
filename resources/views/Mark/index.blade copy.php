@@ -5,16 +5,30 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">AslBelgi</h3>
+                                            <h3 class="nk-block-title page-title">Задачи</h3>
                                             <div class="nk-block-des text-soft">
-                                                <p>В системе имеются 95 asl belgi.</p>
+                                                <p>В системе имеются 95 задач.</p>
                                             </div>
                                         </div><!-- .nk-block-head-content -->
                                         <div class="nk-block-head-content">
                                             <div class="toggle-wrap nk-block-tools-toggle">
                                                 <a href="#" class="btn btn-icon btn-trigger toggle-expand mr-n1" data-target="pageMenu"><em class="icon ni ni-menu-alt-r"></em></a>
                                                 <div class="toggle-expand-content" data-content="pageMenu">
-                                                    
+                                                    <ul class="nk-block-tools g-3">
+                                                        {{--<li>
+                                                            <div class="drodown">
+                                                                <a href="#" class="dropdown-toggle btn btn-white btn-dim btn-outline-light" data-toggle="dropdown"><em class="d-none d-sm-inline icon ni ni-filter-alt"></em><span>Filtered By</span><em class="dd-indc icon ni ni-chevron-right"></em></a>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <ul class="link-list-opt no-bdr">
+                                                                        <li><a href="#"><span>Open</span></a></li>
+                                                                        <li><a href="#"><span>Closed</span></a></li>
+                                                                        <li><a href="#"><span>Onhold</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>--}}
+                                                        <li class="nk-block-tools-opt"><a href="#" class="btn btn-primary"><em class="icon ni ni-plus"></em><span>Новая Задача</span></a></li>
+                                                    </ul>
                                                 </div>
                                             </div><!-- .toggle-wrap -->
                                         </div><!-- .nk-block-head-content -->
@@ -28,42 +42,72 @@
                                                     <thead>
                                                         <tr class="nk-tb-item nk-tb-head">
                                                             
-                                                            <th class="nk-tb-col"><span class="sub-text">Номенклатура</span></th>
-                                                            <th class="nk-tb-col tb-col-xxl"><span class="sub-text">AslBelgi</span></th>
-                                                            <th class="nk-tb-col tb-col-lg"><span class="sub-text">Статус</span></th>
+                                                            <th class="nk-tb-col"><span class="sub-text">Наименование Задачи</span></th>
+                                                            <th class="nk-tb-col tb-col-xxl"><span class="sub-text">Автор</span></th>
+                                                            <th class="nk-tb-col tb-col-lg"><span class="sub-text">Дата</span></th>
+                                                            <th class="nk-tb-col tb-col-lg"><span class="sub-text">К-во AslBelgi</span></th>
                                                             
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">Прогресс</span></th>
                                                             
+                                                            <th class="nk-tb-col nk-tb-col-tools text-right">
+                                                                Action
+                                                            </th>
                                                         </tr><!-- .nk-tb-item -->
                                                     </thead>
                                                     <tbody>
-                                                        @foreach($data as $mark)
                                                         <tr class="nk-tb-item">
                                                             
                                                             <td class="nk-tb-col">
-                                                                
+                                                                <a href="html/apps-kanban.html" class="project-title">
                                                                 
                                                                     <div class="project-info">
-                                                                        <h6 class="title">{{$mark->item->name}}</h6>
+                                                                        <h6 class="title">Coca-cola 1.5l</h6>
                                                                     </div>
-                                                               
+                                                                </a>
                                                             </td>
                                                             <td class="nk-tb-col tb-col-xxl">
-                                                                <span>{{$mark->value}}</span>
+                                                                <span>Alisher</span>
                                                             </td>
                                                             <td class="nk-tb-col tb-col-lg">
-                                                                <span>{{$mark->state}}</span>
+                                                                <span>09.01.2025</span>
                                                             </td>
                                                             
+                                                            <td class="nk-tb-col tb-col-xxl">
+                                                                <span>85 000</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <div class="project-list-progress">
+                                                                    <div class="progress progress-pill progress-md bg-light">
+                                                                        <div class="progress-bar" data-progress="93.5"></div>
+                                                                    </div>
+                                                                    <div class="project-progress-percent">93.5%</div>
+                                                                </div>
+                                                            </td>
                                                            
+                                                            <td class="nk-tb-col nk-tb-col-tools">
+                                                                <ul class="nk-tb-actions gx-1">
+                                                                    <li>
+                                                                        <div class="drodown">
+                                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <ul class="link-list-opt no-bdr">
+                                                                                    <li><a href="html/apps-kanban.html"><em class="icon ni ni-eye"></em><span>Просмотр</span></a></li>
+                                                                                    <li><a href="#"><em class="icon ni ni-edit"></em><span>Исменить</span></a></li>
+                                                                                    <li><a href="#"><em class="icon ni ni-check-round-cut"></em><span>Загрузить</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
                                                         </tr><!-- .nk-tb-item -->
-                                                        @endforeach
+                                                        
                                                     </tbody>
                                                 </table><!-- .nk-tb-list -->
                                             </div><!-- .card-inner -->
                                             <div class="card-inner">
                                                 <div class="nk-block-between-md g-3">
-                                                {{$data->links()}}
-                                                {{-- <div class="g">
+                                                    <div class="g">
                                                         <ul class="pagination justify-content-center justify-content-md-start">
                                                             <li class="page-item"><a class="page-link" href="#">Prev</a></li>
                                                             <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -102,8 +146,7 @@
                                                             </div>
                                                             <div>OF 102</div>
                                                         </div>
-
-                                                    </div>--}}<!-- .pagination-goto -->
+                                                    </div><!-- .pagination-goto -->
                                                 </div><!-- .nk-block-between -->
                                             </div><!-- .card-inner -->
                                         </div><!-- .card-inner-group -->

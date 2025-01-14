@@ -24,6 +24,9 @@ Route::get('/', function () {
 Route::group(['as'=>'admin.'],function(){
     Route::get('/mark/import',[MarkController::class,'markImport']
     )->name('mark.import');
+    Route::post('/mark/import',[MarkController::class,'markImportStore']
+    )->name('mark.store');
+    
     Route::resource('/mark',MarkController::class);
     Route::resource('/item',ItemController::class);
     Route::resource('/user',UserController::class);
