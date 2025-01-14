@@ -25,8 +25,10 @@ class MarkImport implements ToCollection
         //dd($gtin);
 
         $item = Item::where('gtin', $gtin)->first();
-        if ($item == null) {
-            
+        //dd($item);
+        if (!$item) {
+            //dd($item);
+            return to_route('admin.mark.import')->with('Item not found with this GTIN: '.$gtin);
         } else {
             //dd($item);
             $trans = Transaction::create();

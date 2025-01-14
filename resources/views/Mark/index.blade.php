@@ -14,7 +14,10 @@
                                             <div class="toggle-wrap nk-block-tools-toggle">
                                                 <a href="#" class="btn btn-icon btn-trigger toggle-expand mr-n1" data-target="pageMenu"><em class="icon ni ni-menu-alt-r"></em></a>
                                                 <div class="toggle-expand-content" data-content="pageMenu">
-                                                    
+                                                <ul>
+
+                                                    <li class="nk-block-tools-opt"><a href="{{route('admin.mark.import')}}" class="btn btn-info"><em class="icon ni ni-upload"></em><span>Import</span></a></li>   
+                                                </ul>
                                                 </div>
                                             </div><!-- .toggle-wrap -->
                                         </div><!-- .nk-block-head-content -->

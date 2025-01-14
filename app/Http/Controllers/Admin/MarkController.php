@@ -25,11 +25,12 @@ class MarkController extends Controller
                 $file = $request->file('markFile');
                 $fileName=Str::uuid().'csv';
                 $file->move(public_path() . '/csv',$fileName);
-                Excel::import(new MarkImport,'csv/mark.csv');
+                $res=Excel::import(new MarkImport,'csv/mark.csv');
+               // dd($res);
                 File::delete($fileName);
                 return to_route('admin.mark.index');        
             }else{
-                return to_route('admin.mark.import');
+                return to_route('admin.mark.import')-with('YOu did not browse the file');
 
             }
          }
